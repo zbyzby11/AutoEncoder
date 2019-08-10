@@ -7,8 +7,8 @@
 环境：python3.7、pytorch1.1等
 
 ##运行以下命令：
-    python -m visdom.server # 启动visdom服务
+    python -m visdom.server  启动visdom服务
     
     cd src
     
-    python3 auto-encoder.py # 在默认端口http://localhost:8097 访问可视化结果
+    python3 auto-encoder.py 在默认端口http://localhost:8097 访问可视化结果

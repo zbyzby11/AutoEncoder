@@ -23,7 +23,7 @@ class AE(object):
         self.training_times = training_times
         self.device = t.device('cuda' if t.cuda.is_available() else 'cpu')
         self.train_data, self.test_data = data_create(self.batch_size)
-        self.model = model()
+        self.model = model().to(self.device)
         self.optimizer = optim.Adam(self.model.parameters(), lr=self.lr)
         self.loss = MSELoss()
 
